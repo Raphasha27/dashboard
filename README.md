@@ -1,8 +1,10 @@
-# 🚍 Gauteng Transport Intelligence Dashboard
+# 🚍 KIROV DYNAMICS | GAUTENG TRANSPORT INTELLIGENCE DASHBOARD
 
-![Dashboard Preview](./assets/screenshot_app.png)
+[![Kirov Dynamics](https://img.shields.io/badge/Kirov_Dynamics-AI_Product_Builder-002D62?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27)
+![Role](https://img.shields.io/badge/Role-AI_Product_Builder-blue?style=for-the-badge&labelColor=0d1117)
 
-A professional-grade, real-time analytics dashboard for monitoring and managing public transport systems (Metrobus, Gautrain, BRT, etc.) throughout Gauteng Province. Built with **Streamlit** and Python.
+**Gauteng Transport Intelligence Dashboard** is a professional-grade, real-time analytics engine for monitoring and managing public transport systems throughout Gauteng. Developed by **Kirov Dynamics Technology**, it demonstrates elite **AI Product Building** by converting complex transit telemetry into actionable urban intelligence.
+
 
 🔗 **Repository:** [Raphasha27/dashboard](https://github.com/Raphasha27/dashboard)
 
