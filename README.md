@@ -1,69 +1,43 @@
-# 🚍 Gauteng Transport Intelligence Dashboard
+# 📊 Kirov DataLab: Enterprise Analytics & ML Platform
 
-![Dashboard Preview](./assets/screenshot_app.png)
+*The central intelligence hub for data engineering, predictive modeling, and strategic insights.*
 
-A professional-grade, real-time analytics dashboard for monitoring and managing public transport systems (Metrobus, Gautrain, BRT, etc.) throughout Gauteng Province. Built with **Streamlit** and Python.
-
-🔗 **Repository:** [Raphasha27/dashboard](https://github.com/Raphasha27/dashboard)
-
----
-
-## 📌 Features
-
-- **📍 Geospatial Intelligence**: 
-  - Interactive map visualization of transport hubs and active routes.
-  - Real-time heatmaps of passenger density at major stations.
-- **📊 Operational Analytics**:
-  - Live KPIs for passenger volume, on-time performance, and revenue.
-  - Granular breakdown of satisfaction scores and efficiency metrics.
-- **📉 Route Diagnostics**:
-  - Automated identification of underperforming routes (low satisfaction/reliability).
-  - Drill-down capabilities for root cause analysis.
-- **🛠️ Realistic Simulations**:
-  - Includes a built-in mock data engine to simulate 30 days of realistic transport activity across all major modes.
-- **🤖 AI & Pro Features**:
-  - **Smart Chatbot**: Natural language queries for network status and stats.
-  - **Predictive Forecasting**: Machine learning projections for future passenger demand.
-  - **Data Export**: One-click CSV download of filtered datasets.
+[![Deployed on Streamlit](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://kirov-datalab.streamlit.app)
+[![Sovereign Intelligence](https://img.shields.io/badge/Intelligence-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn)](https://github.com/Raphasha27/kirov-datalab)
 
 ---
 
-## 🚀 Quick Start
+## 🏛️ Platform Architecture
+Kirov DataLab is designed as a modular analytics workbench, enabling rapid ingestion, processing, and visualization of complex datasets.
 
-### 1. Prerequisites
-Ensure you have Python 3.8+ installed.
-
-### 2. Installation
-Clone the repository and install the dependencies:
-
-```bash
-pip install -r requirements.txt
+```mermaid
+graph TD
+    Data[Raw Data - CSV/JSON] -->|Ingestion| Clean[Pandas Preprocessing]
+    Clean -->|Feature Engineering| ML[Predictive Models - Scikit-Learn]
+    Clean -->|Exploratory Analysis| Dash[Streamlit Interactive UI]
+    ML -->|Inference| Dash
+    Dash -->|Export| PDF[Professional Analytics Report]
 ```
 
-### 3. Run the App
-Launch the dashboard locally:
+## 🚀 Key Capabilities
+| Capability | Sentinel Feature | Tech Stack |
+| :--- | :--- | :--- |
+| **Auto-Insights** | Automated trend detection & anomaly identification. | Pandas / NumPy |
+| **Predictive Modeling** | Real-time classification and regression engines. | Scikit-Learn |
+| **Geospatial Mapping** | Dynamic mapping of regional data (e.g., Gauteng). | Plotly / Folium |
+| **Export Reporting** | High-fidelity PDF generation for stakeholders. | ReportLab / Matplotlib |
 
-```bash
-streamlit run gauteng_transport_dashboard.py
-```
+## 🛠️ Integrated ML Engines
+DataLab includes purpose-built engines for the African context:
+- **Economic Forecaster**: Time-series analysis for regional market trends.
+- **Logistics Optimizer**: Neural routing simulations for township economies.
+- **Anomaly Detection**: IsolationForest-driven outlier identification in financial data.
 
-The app will open automatically in your browser at `http://localhost:8501`.
-
----
-
-## 🛠️ Tech Stack
-- **Frontend**: [Streamlit](https://streamlit.io/)
-- **Data Handling**: Pandas, NumPy
-- **Visualizations**: 
-  - [Streamlit Map](https://docs.streamlit.io/library/api-reference/charts/st.map) (Geospatial)
-  - [Plotly Express](https://plotly.com/python/plotly-express/) (Interactive Charts)
-- **Deployment**: Ready for Streamlit Cloud
-
----
-
-## 🤝 Contributing
-Contributions are welcome! Please feel free to verify the status of the `dev` branch before making a pull request.
+## 🚦 Deployment
+Kirov DataLab is optimized for high-visibility deployments:
+- **Cloud Hosting**: Streamlit Cloud (Free Tier)
+- **R&D Environment**: Jupyter Lab / Google Colab
+- **CI/CD**: GitHub Actions for automated linting and smoke-testing.
 
 ---
-
-*© 2025 Gauteng Transport / NexusSys*
+© 2026 Kirov Dynamics Technology · Engineering the Data-Driven Future.
