@@ -2,7 +2,6 @@ name: Continuous Integration
 
 on:
   workflow_dispatch:
-
   push:
     branches: [ master ]
   pull_request:
@@ -10,22 +9,12 @@ on:
 
 jobs:
   python:
-  workflow_dispatch:
 
-    name: Streamlit (Lint & Setup)
-    runs-on:
-  workflow_dispatch:
- ubuntu-latest
-    steps:
       - uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version:
-  workflow_dispatch:
- '3.11'
-          cache: 'pip'
-      - name: Install dependencies
+          python-version: - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install streamlit flake8
@@ -33,14 +22,10 @@ jobs:
       - name: Lint
         run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
-  security_scan:
+  security_scan: 
     name: Security Scan (Trivy)
     needs: python
-    runs-on:
-  workflow_dispatch:
- ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    runs-on: - uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
@@ -49,4 +34,3 @@ jobs:
           format: 'table'
           exit-code: '0'
           severity: 'CRITICAL,HIGH'
-
