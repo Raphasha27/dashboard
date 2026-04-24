@@ -8,6 +8,7 @@
 ---
 
 ## 🏛️ Platform Architecture
+
 Kirov DataLab is designed as a modular analytics workbench, enabling rapid ingestion, processing, and visualization of complex datasets.
 
 ```mermaid
@@ -20,6 +21,7 @@ graph TD
 ```
 
 ## 🚀 Key Capabilities
+
 | Capability | Sentinel Feature | Tech Stack |
 | :--- | :--- | :--- |
 | **Auto-Insights** | Automated trend detection & anomaly identification. | Pandas / NumPy |
@@ -28,13 +30,17 @@ graph TD
 | **Export Reporting** | High-fidelity PDF generation for stakeholders. | ReportLab / Matplotlib |
 
 ## 🛠️ Integrated ML Engines
+
 DataLab includes purpose-built engines for the African context:
+
 - **Economic Forecaster**: Time-series analysis for regional market trends.
 - **Logistics Optimizer**: Neural routing simulations for township economies.
 - **Anomaly Detection**: IsolationForest-driven outlier identification in financial data.
 
 ## 🚦 Deployment
+
 Kirov DataLab is optimized for high-visibility deployments:
+
 - **Cloud Hosting**: Streamlit Cloud (Free Tier)
 - **R&D Environment**: Jupyter Lab / Google Colab
 - **CI/CD**: GitHub Actions for automated linting and smoke-testing.
