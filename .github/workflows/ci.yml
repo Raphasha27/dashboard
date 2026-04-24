@@ -14,7 +14,8 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: - name: Install dependencies
+          python-version: -
+    name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install streamlit flake8
@@ -25,7 +26,8 @@ jobs:
   security_scan: 
     name: Security Scan (Trivy)
     needs: python
-    runs-on: - uses: actions/checkout@v4
+    runs-on: -
+    uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
