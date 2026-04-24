@@ -1,21 +1,29 @@
 name: Continuous Integration
 
 on:
+  workflow_dispatch:
+
   push:
-    branches: [ main, master ]
+    branches: [ master ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ master ]
 
 jobs:
   python:
+  workflow_dispatch:
+
     name: Streamlit (Lint & Setup)
-    runs-on: ubuntu-latest
+    runs-on:
+  workflow_dispatch:
+ ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version:
+  workflow_dispatch:
+ '3.11'
           cache: 'pip'
       - name: Install dependencies
         run: |
@@ -28,7 +36,9 @@ jobs:
   security_scan:
     name: Security Scan (Trivy)
     needs: python
-    runs-on: ubuntu-latest
+    runs-on:
+  workflow_dispatch:
+ ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
@@ -39,3 +49,4 @@ jobs:
           format: 'table'
           exit-code: '0'
           severity: 'CRITICAL,HIGH'
+
