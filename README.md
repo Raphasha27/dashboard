@@ -1,49 +1,109 @@
-# 📊 Kirov DataLab: Enterprise Analytics & ML Platform
+# 📊 Kirov DataLab — Sovereign Data Engineering Platform
 
-*The central intelligence hub for data engineering, predictive modeling, and strategic insights.*
+> **Future Project · Seeking Contributors & Funding**
 
-[![Deployed on Streamlit](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://kirov-datalab.streamlit.app)
-[![Sovereign Intelligence](https://img.shields.io/badge/Intelligence-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn)](https://github.com/Raphasha27/kirov-datalab)
+![Kirov DataLab Banner](https://capsule-render.vercel.app/api?type=waving&color=0:003366,50:660066,100:0d1117&height=180&section=header&text=Kirov%20DataLab&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Data%20Engineering%20%7C%20AI%20Analytics%20%7C%20Geospatial%20Intelligence&descAlignY=58&animation=fadeIn)
+
+[![CI](https://github.com/Raphasha27/kirov-datalab/actions/workflows/ci.yml/badge.svg)](https://github.com/Raphasha27/kirov-datalab/actions)
+[![CodeQL](https://github.com/Raphasha27/kirov-datalab/actions/workflows/codeql.yml/badge.svg)](https://github.com/Raphasha27/kirov-datalab/actions)
+[![Status](https://img.shields.io/badge/Status-Seeking%20Contributors-FFD700?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27/kirov-datalab)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=0d1117)](./LICENSE)
 
 ---
 
-## 🏛️ Platform Architecture
+## 🚀 Vision
 
-Kirov DataLab is designed as a modular analytics workbench, enabling rapid ingestion, processing, and visualization of complex datasets.
+**Kirov DataLab** is a sovereign data engineering and AI analytics platform purpose-built for the African context. It processes public and private datasets to generate geospatial intelligence, economic risk maps, and population-level insights that empower governments, NGOs, and enterprises to make evidence-based decisions.
+
+This project is **actively developed** and **open to data scientists, engineers, and investors** who understand the transformative power of clean, sovereign data infrastructure.
+
+---
+
+## 🧠 What It Does
+
+| Feature | Description |
+| :--- | :--- |
+| **Geospatial Mapping** | Interactive choropleth maps of Gauteng and SADC regions using Plotly |
+| **Economic Risk Scoring** | IsolationForest anomaly detection on economic indicators |
+| **Data Pipeline** | Automated ingestion, cleaning, and transformation of public datasets |
+| **AI Forecasting** | Time-series models for population, resource, and demand forecasting |
+| **Interactive Dashboard** | Streamlit-powered analytical interface with real-time filtering |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Analytics UI** | Streamlit, Plotly Express, Folium |
+| **Data Engineering** | Python, Pandas, NumPy, GeoPandas |
+| **Machine Learning** | Scikit-Learn (IsolationForest, RandomForest) |
+| **Geospatial** | Folium, Shapely, GeoJSON |
+| **CI/CD** | GitHub Actions (CodeQL, CI, Secret Scan) |
+| **Planned Deployment** | Streamlit Cloud (free tier, no billing risk) |
+
+> ⚠️ **Deployment Note:** Not yet deployed. When ready, this will be hosted on **Streamlit Cloud** — which has a generous free tier with zero billing risk. No Docker or cloud compute required.
+
+---
+
+## 🏗️ Architecture
 
 ```mermaid
 graph TD
-    Data[Raw Data - CSV/JSON] -->|Ingestion| Clean[Pandas Preprocessing]
-    Clean -->|Feature Engineering| ML[Predictive Models - Scikit-Learn]
-    Clean -->|Exploratory Analysis| Dash[Streamlit Interactive UI]
-    ML -->|Inference| Dash
-    Dash -->|Export| PDF[Professional Analytics Report]
+    Source[(Public Datasets / APIs)] -->|Ingest| Pipeline[Data Pipeline]
+    Pipeline -->|Clean & Transform| Store[(Processed Data Store)]
+    Store -->|Feed| Models[Scikit-Learn Models]
+    Store -->|Feed| Maps[GeoPandas / Folium Maps]
+    Models -->|Risk Scores| Dashboard[Streamlit Dashboard]
+    Maps -->|Geospatial Layers| Dashboard
+    Dashboard -->|Displays| User((Analyst / Government))
 ```
 
-## 🚀 Key Capabilities
+---
 
-| Capability | Sentinel Feature | Tech Stack |
-| :--- | :--- | :--- |
-| **Auto-Insights** | Automated trend detection & anomaly identification. | Pandas / NumPy |
-| **Predictive Modeling** | Real-time classification and regression engines. | Scikit-Learn |
-| **Geospatial Mapping** | Dynamic mapping of regional data (e.g., Gauteng). | Plotly / Folium |
-| **Export Reporting** | High-fidelity PDF generation for stakeholders. | ReportLab / Matplotlib |
+## 🧪 How to Run Locally
 
-## 🛠️ Integrated ML Engines
+```bash
+# 1. Clone the repository
+git clone https://github.com/Raphasha27/kirov-datalab.git
+cd kirov-datalab
 
-DataLab includes purpose-built engines for the African context:
+# 2. Create a virtual environment
+python -m venv venv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate  # macOS/Linux
 
-- **Economic Forecaster**: Time-series analysis for regional market trends.
-- **Logistics Optimizer**: Neural routing simulations for township economies.
-- **Anomaly Detection**: IsolationForest-driven outlier identification in financial data.
+# 3. Install dependencies
+pip install -r requirements.txt
 
-## 🚦 Deployment
+# 4. Run the Streamlit dashboard
+streamlit run app.py
+# Opens automatically at http://localhost:8501
 
-Kirov DataLab is optimized for high-visibility deployments:
-
-- **Cloud Hosting**: Streamlit Cloud (Free Tier)
-- **R&D Environment**: Jupyter Lab / Google Colab
-- **CI/CD**: GitHub Actions for automated linting and smoke-testing.
+# 5. Run data pipeline separately (optional)
+python pipeline/ingest.py
+```
 
 ---
-© 2026 Kirov Dynamics Technology · Engineering the Data-Driven Future.
+
+## 🤝 Contributing
+
+We need people who care about African data sovereignty:
+
+- 📊 **Data Scientists** — Improve forecasting and anomaly detection models
+- 🗺️ **GIS Engineers** — Expand geospatial coverage across SADC
+- 🐍 **Python Developers** — Optimize the data ingestion pipeline
+- 📝 **Domain Experts** — Public health, agriculture, urban planning data
+
+---
+
+## 💡 Funding & Collaboration
+
+> Kirov DataLab is the analytical backbone of **Kirov Dynamics Technology**.
+> We are seeking partnerships with research institutions, government agencies, and impact investors who want to fund evidence-based African decision-making infrastructure.
+>
+> Contact: [Kirov Dynamics Portfolio](https://portfolio-react-zeta-black-48.vercel.app/)
+
+---
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:660066,100:003366&height=100&section=footer)
