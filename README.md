@@ -4,8 +4,8 @@
 
 ![Kirov DataLab Banner](https://capsule-render.vercel.app/api?type=waving&color=0:003366,50:660066,100:0d1117&height=180&section=header&text=Kirov%20DataLab&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Data%20Engineering%20%7C%20AI%20Analytics%20%7C%20Geospatial%20Intelligence&descAlignY=58&animation=fadeIn)
 
-[![CI](https://github.com/Raphasha27/kirov-datalab/actions/workflows/ci.yml/badge.svg)](https://github.com/Raphasha27/kirov-datalab/actions)
-[![CodeQL](https://github.com/Raphasha27/kirov-datalab/actions/workflows/codeql.yml/badge.svg)](https://github.com/Raphasha27/kirov-datalab/actions)
+
+
 [![Status](https://img.shields.io/badge/Status-Seeking%20Contributors-FFD700?style=for-the-badge&labelColor=0d1117)](https://github.com/Raphasha27/kirov-datalab)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=0d1117)](./LICENSE)
 
